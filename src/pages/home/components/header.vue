@@ -20,7 +20,7 @@ export default {
 
 <style lang="stylus" scoped>
 .header
-  display:flex
+  display flex
   text-align center
   height 0.86rem
   width 100%
@@ -44,5 +44,4 @@ export default {
     padding-right 0.1rem
     .city-icon
       font-size 0.20rem
-
 </style>
