@@ -2,12 +2,9 @@
 <div class="wraper">
   <swiper :options="swiperOption">
     <!-- slides -->
-    <swiper-slide >
-      <img src="../../../assets/img/slider0.jpg" class="slider-img">
+    <swiper-slide  v-for="item of lists" :key="item.id">
+      <img :src="item.imgUrl" class="slider-img">
     </swiper-slide>
-    <swiper-slide>
-      <img src="../../../assets/img/slider1.jpg" class="slider-img">
-      </swiper-slide>
 
     <!-- Optional controls -->
     <div class="swiper-pagination"  slot="pagination"></div>
@@ -17,6 +14,9 @@
 
 <script>
 export default {
+  props: {
+    lists: Array
+  },
   data () {
     return {
       swiperOption: {
