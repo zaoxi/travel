@@ -25,6 +25,7 @@ export default {
 
 <style lang="stylus" scoped>
 .recommend-title
+  margin-top 0.2rem
   width 100%
   height 0.8rem
   text-indent 0.2rem

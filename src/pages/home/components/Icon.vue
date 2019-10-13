@@ -44,19 +44,20 @@ export default {
 <style lang="stylus" scoped>
 .icons
   width 100%
-  height 0
-  padding-bottom 50%
-  overflow hidden
   margin-top 0.2rem
   .icon-item
     float left
     box-sizing border-box
+    height 0
     width 25%
+    padding-bottom 25%
+    overflow hidden
     margin:0.1rem 0
     .icon-img
       width 70%
       padding 0 15%
     .icon-desc
       padding-top 0.1rem
+      line-height 0.32rem
       text-align center
 </style>
