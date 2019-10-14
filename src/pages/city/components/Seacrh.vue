@@ -1,7 +1,7 @@
 <template>
 <div>
   <div class="search">
-    <input type="search" name="city" placeholder="输入城市名称/拼音"
+    <input type="input" name="city" placeholder="输入城市名称/拼音"
     v-model="keywords"
     >
   </div >
@@ -42,8 +42,8 @@ export default {
         this.list = []
         return
       }
-      let result = []
       this.timer = setInterval(() => {
+        let result = []
         for (let key in this.cities) {
           this.cities[key].forEach((value) => {
             if (value.spell.indexOf(this.keywords) > -1 ||
