@@ -14,6 +14,7 @@
         <div class="button" v-for="item of lists.hotCities" :key="item.id">{{item.name}}</div>
       </div>
     </div>
+
     <div class="area "
          v-for="(items,key) of lists.cities"
          :key="key"
@@ -22,8 +23,8 @@
       <div class="title border-topbottom "
       >{{key}}
       </div>
-      <div class="button-list">
-        <div class="button"
+      <div class="city-list">
+        <div class="city-list-item"
              v-for="item of items"
              :key="item.id"
         >{{item.name}}</div>
@@ -83,10 +84,17 @@ export default {
     padding 0.1rem 0
     .button
       box-sizing border-box
-      width 33%
+      width 30%
+      margin 0 0.1rem
       padding 0.1rem 0
       text-align center
       border 0.02rem solid #eee
       border-radius 0.04rem
+  .city-list
+    width 100%
+    .city-list-item
+      padding 0.1rem 0
+      border-bottom  0.02rem solid #eee
+      text-indent 0.32rem
 
 </style>

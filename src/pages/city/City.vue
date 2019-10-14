@@ -1,6 +1,7 @@
 <template>
-  <div>
+  <div class="main-Wrapper">
     <city-header ></city-header>
+    <city-search :cities="data.cities"></city-search>
     <city-list :lists="data" :letter="letter"></city-list>
     <city-alphabet
       :alphadet="data.cities"
@@ -11,6 +12,7 @@
 
 <script>
 import CityHeader from './components/header.vue'
+import CitySearch from './components/Seacrh'
 import CityList from './components/list.vue'
 import CityAlphabet from './components/Alphabet'
 import axios from 'axios'
@@ -24,11 +26,11 @@ export default {
   components: {
     CityHeader,
     CityList,
-    CityAlphabet
+    CityAlphabet,
+    CitySearch
   },
   mounted () {
     this.getCityInfo()
-
   },
   methods: {
     getCityInfo () {
@@ -48,6 +50,12 @@ export default {
 }
 </script>
 
-<style scoped>
-
+<style lang="stylus" scoped>
+.main-Wrapper
+  position fixed
+  top 0
+  left 0
+  width 100%
+  height 100%
+  overflow hidden
 </style>
