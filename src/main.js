@@ -9,7 +9,7 @@ import '@/assets/styles/border.css'
 import '@/assets/iconfont/iconfont.css'
 import 'swiper/dist/css/swiper.css'
 import FastClick from 'fastclick'
-
+import store from './store'
 Vue.config.productionTip = false
 FastClick.attach(document.body)
 Vue.use(VueAwesomeSwiper)
@@ -17,6 +17,7 @@ Vue.use(VueAwesomeSwiper)
 new Vue({
   el: '#app',
   router,
+  store,
   components: { App },
   template: '<App/>'
 })

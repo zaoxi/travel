@@ -11,6 +11,7 @@
       <div class="city-list-item"
            v-for="item of list"
            :key="item.id"
+           @click="handleCityClick(item)"
       >{{item}}</div>
       <div class="city-list-item"
       v-show="!list.length"
@@ -59,7 +60,14 @@ export default {
   },
   mounted () {
     this.scroll = new Bscroll(this.$refs.content)
+  },
+  methods: {
+    handleCityClick (city) {
+      this.$store.commit('changeCity', city)
+      this.$router.push('/')
+    }
   }
+
 }
 </script>
 
