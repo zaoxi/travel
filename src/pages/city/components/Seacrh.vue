@@ -103,5 +103,6 @@ export default {
       padding 0.1rem 0
       border-bottom  0.02rem solid #eee
       text-indent 0.32rem
-
+      height 0.6rem
+      line-height 0.6rem
 </style>

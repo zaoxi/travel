@@ -1,6 +1,8 @@
 let defaultCity = '贵港'
 try {
-  defaultCity = localStorage.getItem('city')
+  if (localStorage.getItem('city')) {
+    defaultCity = localStorage.getItem('city')
+  }
 } catch (e) {
 
 }

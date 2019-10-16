@@ -96,7 +96,7 @@ export default {
     .button
       box-sizing border-box
       width 30%
-      margin 0 0.1rem
+      margin 0.1rem  0.1rem
       padding 0.1rem 0
       text-align center
       border 0.02rem solid #eee
@@ -107,5 +107,7 @@ export default {
       padding 0.1rem 0
       border-bottom  0.02rem solid #eee
       text-indent 0.32rem
+      height 0.6rem
+      line-height 0.6rem
 
 </style>
