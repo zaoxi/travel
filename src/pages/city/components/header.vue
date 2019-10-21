@@ -6,7 +6,7 @@
             <span class="iconfont">&#xe667;</span>
         </div>
       </router-link>
-      <div class="top-center">城市选择</div>
+      <div class="top-center">城市详情</div>
     </div>
   </div>
 </template>

@@ -44,6 +44,8 @@ export default {
     width 1.6rem
     height 1.6rem
     padding 0.1 rem
+    border-radius: .3rem
+
   .item-info
     padding 0.1rem
     flex 1
